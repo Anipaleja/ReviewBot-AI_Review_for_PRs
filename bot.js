@@ -6,7 +6,7 @@ async function callOpenAI(prompt) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      Authorization: `Bearer ${process.env.openai_key}`,
     },
     body: JSON.stringify({
       model: "gpt-4o-mini",
@@ -26,7 +26,7 @@ async function callOpenAI(prompt) {
 
 async function main() {
   try {
-    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+    const octokit = new Octokit({ auth: process.env.github_token });
 
     const repo = process.env.GITHUB_REPOSITORY;
     const prMatch = process.env.GITHUB_REF.match(/refs\/pull\/(\d+)\/merge/);
