@@ -29,3 +29,12 @@ fn main() -> io::Result<()> {
 
     Ok(())
 }
+/* How to use:
+Install Rust if you haven’t already: https://rustup.rs/
+Run this in your project folder:
+*/
+
+rustc code_metrics.rs
+./code_metrics <path-to-any-file>
+
+// Or create a Cargo.toml and run via cargo run -- <filename> if you want to expand it later.
