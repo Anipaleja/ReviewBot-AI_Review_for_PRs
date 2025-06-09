@@ -1,0 +1,26 @@
+name: ReviewBot AI - Automated Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ReviewBot AI
+        env:
+          github_token: ${{ secrets._____ }} # Add in your github token in the area with "_____"
+          openai_key: ${{ secrets._____ }} # Add in your api key form open ai in the areas with "_____"
+        run: npm start
