@@ -39,5 +39,31 @@ rustc code_metrics.rs
 
 # Run it on any file
 ./code_metrics path/to/your/file.js
+```
+
+**Output example:**
+```yaml
+File: file.js
+Total lines: 120
+Total characters: 2500
+```
+
+This utility complements ReviewBot AI by helping you measure code size and complexity easily.
+
+## Future Enhancements
+
+- Add support for more languages (Python, Rust, C++, etc.) in the AI review  
+- Add severity scores and code quality badges  
+- Extend Rust tool for complexity analysis  
+- Integrate with other git platforms (GitLab, Bitbucket)  
+
+## Contributing
+
+Feel free to open issues or submit pull requests to improve the bot or add new features!
+
+## License
+
+MIT License
+
 
 
