@@ -24,7 +24,7 @@
 
 ### Setup the GitHub Action
 
-1. Add your OpenAI API key as a GitHub secret named `OPENAI_API_KEY`  
+1. Add your OpenAI API key as a GitHub secret named `openai_key`  
 2. Push the code to your GitHub repository  
 3. Open a Pull Request — the bot will automatically review changed JS/TS files and comment suggestions  
 
