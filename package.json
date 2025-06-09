@@ -1,0 +1,18 @@
+{
+  "name": "reviewbot-ai",
+  "version": "1.0.0",
+  "description": "AI-powered automated code review bot for GitHub PRs",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "node-fetch": "^3.3.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
